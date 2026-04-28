@@ -1280,7 +1280,7 @@ function drawLastDatapointLabel(svg: Record<string, any>) {
 
 /**
  * Build and return a legend to be injected during the SVG export only, since the custom legend is
- * displayed as an independant div, content has to be injected within the chart's viewBox.
+ * displayed as an independent div, content has to be injected within the chart's viewBox.
  *
  * Legend items are displayed in a column, at the top left of the chart.
  */
@@ -1416,7 +1416,7 @@ const chartConfig = computed<VueUiXyConfig>(() => {
           svg: $t('package.trends.download_file', { fileType: 'SVG' }),
           annotator: $t('package.trends.toggle_annotator'),
           stack: $t('package.trends.toggle_stack_mode'),
-          altCopy: $t('package.trends.copy_alt.button_label'), // Do not make this text dependant on the `copied` variable, since this would re-render the component, which is undesirable if the minimap was used to select a time frame.
+          altCopy: $t('package.trends.copy_alt.button_label'), // Do not make this text dependent on the `copied` variable, since this would re-render the component, which is undesirable if the minimap was used to select a time frame.
           open: $t('package.trends.open_options'),
           close: $t('package.trends.close_options'),
         },
