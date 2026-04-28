@@ -7,5 +7,6 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
     "*.vue": "${capture}.stories.ts"
-  }
+  },
+  "sarif-viewer.connectToGithubCodeScanning": "on"
 }
