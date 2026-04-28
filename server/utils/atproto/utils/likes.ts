@@ -113,7 +113,7 @@ export class PackageLikesUtils {
    * @returns
    */
   async getLikes(packageName: string, usersDid?: string | undefined): Promise<PackageLikes> {
-    //TODO: May need to do some clean up on the package name, and maybe even hash it? some of the charcteres may be a bit odd as keys
+    //TODO: May need to do some clean up on the package name, and maybe even hash it? some of the characters may be a bit odd as keys
     const totalLikesKey = CACHE_PACKAGE_TOTAL_KEY(packageName)
     const subjectRef = PACKAGE_SUBJECT_REF(packageName)
 
