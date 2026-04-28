@@ -45,7 +45,7 @@ export const CONSTELLATION_HOST = 'constellation.microcosm.blue'
 export const SLINGSHOT_HOST = 'slingshot.microcosm.blue'
 
 // ATProtocol
-// Refrences used to link packages to things that are not inherently atproto
+// References used to link packages to things that are not inherently atproto
 export const PACKAGE_SUBJECT_REF = (packageName: string) =>
   `https://npmx.dev/package/${packageName}`
 // OAuth scopes as we add new ones we need to check these on certain actions. If not redirect the user to login again to upgrade the scopes
