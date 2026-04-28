@@ -1282,7 +1282,7 @@ function drawLastDatapointLabel(svg: Record<string, any>) {
  * Build and return a legend to be injected during the SVG export only, since the custom legend is
  * displayed as an independant div, content has to be injected within the chart's viewBox.
  *
- * Legend items are displayed in a column, on the top left of the chart.
+ * Legend items are displayed in a column, at the top left of the chart.
  */
 function drawSvgPrintLegend(svg: Record<string, any>) {
   const data = Array.isArray(svg?.data) ? svg.data : []
