@@ -57,7 +57,7 @@ if (import.meta.server) {
   assertValidPackageName(packageName.value)
 }
 
-// Fetch README for specific version if requested, otherwise latest
+// Fetch README for specific version if requested; otherwise, latest
 const { data: readmeData, status: readmeStatus } = useLazyFetch<ReadmeResponse>(
   () => {
     const base = `/api/registry/readme/${packageName.value}`

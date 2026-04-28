@@ -42,7 +42,7 @@ export function getExecutableInfo(
     return { primaryCommand: '', commands: [], hasExecutable: false }
   }
 
-  // Prefer command matching package name if it exists, otherwise use first
+  // Prefer command matching package name if it exists; otherwise, use first
   const baseName = packageName.startsWith('@') ? packageName.split('/')[1] : packageName
   const primaryCommand = baseName && commands.includes(baseName) ? baseName : firstCommand
 
