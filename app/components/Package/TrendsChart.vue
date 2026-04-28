@@ -1190,7 +1190,7 @@ function drawEstimationLine(svg: Record<string, any>) {
 
     /**
      * The following svg elements are injected in the #svg slot of VueUiXy:
-     * - a line overlay covering the plain path bewteen the last datapoint and its ancestor
+     * - a line overlay covering the plain path between the last datapoint and its ancestor
      * - a dashed line connecting the last datapoint to its ancestor
      * - a circle for the last datapoint
      */
