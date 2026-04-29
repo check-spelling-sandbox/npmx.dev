@@ -9,7 +9,7 @@ interface LocalCachedEntry<T = unknown> {
 
 /**
  * Checks to see if a cache entry is stale locally
- * @param entry - The entry from the locla cache
+ * @param entry - The entry from the local cache
  * @returns
  */
 function isCacheEntryStale(entry: LocalCachedEntry): boolean {
