@@ -57,7 +57,7 @@ if (import.meta.server) {
   assertValidPackageName(packageName.value)
 }
 
-// Fetch README for specific version if requested, otherwise latest
+// Fetch README for specific version if requested; otherwise, latest
 const { data: readmeData, status: readmeStatus } = useLazyFetch<ReadmeResponse>(
   () => {
     const base = `/api/registry/readme/${packageName.value}`
@@ -234,7 +234,7 @@ useCommandPalettePackageCommands(commandPalettePackageContext)
 // 1. SPA fallback (200.html): No real content was server-rendered.
 //    → Show skeleton while data fetches on the client.
 //
-// 2. SSR-rendered HTML with missing payload: Content was rendered but the external _payload.json
+// 2. SSR-rendered HTML missing payload: Content was rendered but the external _payload.json
 //    returned an ISR fallback.
 //    → Preserve the server-rendered DOM, don't flash to skeleton.
 const nuxtApp = useNuxtApp()
@@ -526,7 +526,7 @@ const showSkeleton = shallowRef(false)
   </DevOnly>
   <main v-if="!isVersionsRoute" class="flex-1 pb-8">
     <!-- Scenario 1: SPA fallback — show skeleton (no real content to preserve) -->
-    <!-- Scenario 2: SSR with missing payload — preserve server DOM, skip skeleton -->
+    <!-- Scenario 2: SSR missing payload — preserve server DOM, skip skeleton -->
     <PackageSkeleton
       v-if="isSpaFallback || (!hasServerContentOnly && (showSkeleton || status === 'pending'))"
     />

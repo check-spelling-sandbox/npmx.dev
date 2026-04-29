@@ -9,7 +9,7 @@ export type Noodle = {
   timezone?: string
   // Date for the noodle
   date?: string
-  // Date to for the noodle
+  // `Date to` for the noodle
   dateTo?: string
   // Logo for the noodle - could be any component. Relative parent - intro section
   logo: Component
